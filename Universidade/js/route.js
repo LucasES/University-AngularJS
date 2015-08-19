@@ -15,7 +15,7 @@
                 templateUrl: 'partials/alunos-turma.html',
                 controller: 'turmasCtrl'
             })
-              .when("/dadosAluno", {
+              .when("/dadosAluno/:turmaId/:alunoId", {
                   templateUrl: 'partials/dados-aluno.html',
                   controller: 'AlunoDetails'
               })
