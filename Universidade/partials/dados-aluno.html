@@ -1,1 +1,43 @@
-﻿<p>{{aluno}}</p>
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">
+                Dados Aluno
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#/">Listar</a>
+                </li>
+                <li class="active">Dados Aluno</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container panel">
+        <h2 class="text-center">{{aluno.nome}}</h2>
+        <div class="highlight col-md-6 col-md-offset-3">
+            <h3>Id: <span class="dados">{{aluno.id_aluno}}</span></h3>
+            <h3>Matricula: <span class="dados">{{aluno.matricula}}</span></h3>
+            <h3>Semestre: <span class="dados">{{aluno.aluno_semestre.semestre.data_semestre | date:'dd/MM/yyyy'}}</span></h3>
+            <h3>CPF: <span class="dados">{{aluno.cpf}}</span></h3>
+            <h3>RG: <span class="dados">{{aluno.rg}}</span></h3>
+            <h3>Endereço: <span class="dados">{{aluno.endereco}}</span></h3>
+            <h3>Cidade: <span class="dados">{{aluno.cidade}}</span></h3>
+            <h3>Estado: <span class="dados">{{aluno.estado}}</span></h3>
+            <h3>Telefones: </h3>
+            <ul>
+                <li>{{aluno.telefones.residencial}}</li>
+                <li>{{aluno.telefones.celular}}</li>
+            </ul>
+            <h3>Email: </h3>
+            <ul ng-repeat="email in aluno.email">
+                <li>{{email}}</li>
+            </ul>
+            <h3>Disciplinas: </h3> <ul class="dados" ng-repeat="disciplina in aluno.aluno_semestre.cadeiras.disciplina">
+                <li>{{disciplina.nome}}</li>
+            </ul>
+
+
+        </div>
+    </div>
+    <br />
+</div>

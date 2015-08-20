@@ -1,0 +1,37 @@
+﻿<div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header text-center">
+            Disciplinas
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#/">Listar</a>
+            </li>
+            <li class="active">Disciplinas</li>
+        </ol>
+    </div>
+</div>
+    <div class="container panel" ng-repeat="turma in turmas">
+        <h2>{{turma.descricao}}</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ementa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="disciplina in turma.disciplina | filter: filtro">
+                    <td>
+                        <span>{{disciplina.nome}}</span>
+                    </td>
+                    <td>
+                        <span>{{disciplina.ementa}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+</div>

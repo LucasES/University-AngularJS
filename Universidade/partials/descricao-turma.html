@@ -1,37 +1,38 @@
 ﻿<div class="container">
     <div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header text-center">
-            Disciplinas
-        </h1>
-        <ol class="breadcrumb">
-            <li>
-                <a href="#/">Listar</a>
-            </li>
-            <li class="active">Disciplinas</li>
-        </ol>
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">
+                Dados Turma
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#/">Listar</a>
+                </li>
+                <li class="active">Dados Turma</li>
+            </ol>
+        </div>
     </div>
-</div>
-    <div class="container panel" ng-repeat="turma in turmas">
-        <h2>{{turma.descricao}}</h2>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Ementa</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="disciplina in turma.disciplina | filter: filtro">
-                    <td>
-                        <span>{{disciplina.nome}}</span>
-                    </td>
-                    <td>
-                        <span>{{disciplina.ementa}}</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container panel">
+        <h2 class="text-center">{{turma.nome}}</h2>
+        <div class="highlight col-md-6 col-md-offset-3">
+            <h3>Descrição: <span class="dados">{{turma.descricao}}</span></h3>
+            <h3>Disciplinas: </h3><ul class="dados" ng-repeat="disciplina in turma.disciplina">
+                <li>{{disciplina.nome}} - {{disciplina.sigla}}</li>
+                <ul>
+                    <li>{{disciplina.ementa}}</li>
+                </ul>
+            </ul>
+            <h3>Semestre: <span class="dados">{{turma.semestre.data_semestre | date:'dd/MM/yyyy'}}</span></h3>
+            <h3>Período Professor: <span class="dados">De {{turma.prof_turma.data_inicio | date:'dd/MM/yyyy'}} à {{turma.prof_turma.data_fim | date:'dd/MM/yyyy'}}</span></h3>
+            <h3>Professores: </h3><ul class="dados" ng-repeat="professor in turma.prof_turma.professor">
+                <li> <a href="/#dadosProfessor/{{turma.id}}/{{professor.id}}"> {{professor.nome}} </a> </li>
+
+            </ul>
+            <h3>Alunos: </h3><ul class="dados" ng-repeat="aluno in turma.aluno_turma.aluno">
+                <li> <a href="/#dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}} </a></li>
+
+            </ul>
+        </div>
     </div>
     <br />
 </div>

@@ -7,9 +7,13 @@
                 templateUrl: 'partials/university.html',
                 controller: 'turmasCtrl'
             })
-            .when("/descTurma", {
-                templateUrl: 'partials/descricao-turma.html',
+            .when("/disciplinas", {
+                templateUrl: 'partials/disciplinas.html',
                 controller: 'turmasCtrl'
+            })
+            .when("/descricaoTurmas/:turmaId", {
+                templateUrl: 'partials/descricao-turma.html',
+                controller: 'TurmaDetails'
             })
             .when("/alunosTurma", {
                 templateUrl: 'partials/alunos-turma.html',
@@ -19,6 +23,10 @@
                   templateUrl: 'partials/dados-aluno.html',
                   controller: 'AlunoDetails'
               })
+            .when("/dadosProfessor/:turmaId/:professorId", {
+                templateUrl: 'partials/dados-professor.html',
+                controller: 'ProfessorDetails'
+            })
             .otherwise({
                 redirectTo: "/"
             });            

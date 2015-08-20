@@ -85,8 +85,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="partials\alunos-turma.html" />
     <Content Include="partials\dados-aluno.html" />
+    <Content Include="partials\dados-professor.html" />
     <Content Include="partials\dados-turma.html" />
     <Content Include="partials\descricao-turma.html" />
+    <Content Include="partials\disciplinas.html" />
     <Content Include="partials\filtrar.html" />
     <Content Include="partials\footer.html" />
     <Content Include="partials\header.html" />

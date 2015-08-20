@@ -3,49 +3,69 @@
     padding-bottom: 20px;
 }
 
+footer {
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .footer-centralizado {
     text-align: center;
 }
 
-.footer-centralizado .footer-companhia{
-	color:  #8d9093;
-	font-size: 24px;
-	margin: 0;
-}
+    .footer-centralizado .footer-companhia {
+        color: #8d9093;
+        font-size: 24px;
+        margin: 0;
+    }
 
-.footer-centralizado .footer-companhia-nome{
-	color:  #8f9296;
-	font-size: 14px;
-	padding-bottom:10px;
-}
+    .footer-centralizado .footer-companhia-nome {
+        color: #8f9296;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
 
-.footer-centralizado .footer-links{
-	list-style: none;
-	font-weight: bold;
-	color:  #ffffff;
-	padding: 20px 0 15px;
-	margin: 0;
-}
+    .footer-centralizado .footer-links {
+        list-style: none;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 20px 0 15px;
+        margin: 0;
+    }
 
-.todoName{
-	font-size: 20px;
-	border-bottom: 1px lightgray solid;
-	padding-bottom:5px;
+.todoName {
+    font-size: 20px;
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 5px;
 }
 
 .edit-in-place span {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .edit-in-place input {
-  display: none;
+    display: none;
 }
 
 .edit-in-place.active span {
-  display: none;
+    display: none;
 }
 
 .edit-in-place.active input {
-  display: inline-block;
+    display: inline-block;
+}
+
+.highlight {
+    display: block;
+    position: relative;
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+}
+
+.dados {
+    font-size: 16px;
 }
