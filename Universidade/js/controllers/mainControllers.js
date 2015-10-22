@@ -51,13 +51,13 @@
                 for (var z = 0; z < turma.aluno_turma.aluno[x].aluno_semestre.cadeiras.disciplina.length; z++) {
                     if (turma.aluno_turma.aluno[x].aluno_semestre.cadeiras.disciplina[z].id == $routeParams.idDisciplina) {
                         alunos.push(turma.aluno_turma.aluno[x]);
-                        console.log(turma.aluno_turma.aluno[x]);
+                        //console.log(turma.aluno_turma.aluno[x]);
                     }
                 }
             }
             $scope.alunos = alunos;
             $scope.professores = temp;
-            //console.log($scope.alunos[0].nome);
+            console.log($scope.alunos[0].nome);
         });
     });
 
@@ -70,7 +70,7 @@
                 for (var x = 0; x < $scope.turmas[i].aluno_turma.aluno.length; x++) {
                     if ($scope.turmas[i].id == $routeParams.turmaId && $scope.turmas[i].aluno_turma.aluno[x].id_aluno == $routeParams.alunoId) {
                         $scope.aluno = $scope.turmas[i].aluno_turma.aluno[x];
-                        console.log($scope.aluno);
+                        //console.log($scope.aluno);
                     }
                 }
             }
