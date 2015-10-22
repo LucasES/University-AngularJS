@@ -23,7 +23,9 @@
             </ul>
             <h3>Alunos: </h3>
             <ul ng-repeat="aluno in alunos">
-                <li>{{aluno.nome}}</li>
+
+
+                <li><span> <a href="/#dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}}</a> </span></li>
             </ul>
         </div>
     </div>
