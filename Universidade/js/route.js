@@ -8,27 +8,27 @@
                 controller: 'turmasCtrl'
             })
             .when("/disciplinas", {
-                templateUrl: 'partials/disciplinas.html',
+                templateUrl: 'partials/disciplina/disciplinas.html',
                 controller: 'turmasCtrl'
             })
             .when("/descricaoTurmas/:turmaId", {
-                templateUrl: 'partials/descricao-turma.html',
+                templateUrl: 'partials/turma/descricao-turma.html',
                 controller: 'TurmaDetails'
             })
             .when("/alunosTurma", {
-                templateUrl: 'partials/alunos-turma.html',
+                templateUrl: 'partials/aluno/alunos-turma.html',
                 controller: 'turmasCtrl'
             })
               .when("/dadosAluno/:turmaId/:alunoId", {
-                  templateUrl: 'partials/dados-aluno.html',
+                  templateUrl: 'partials/aluno/dados-aluno.html',
                   controller: 'AlunoDetails'
               })
             .when("/dadosProfessor/:turmaId/:professorId", {
-                templateUrl: 'partials/dados-professor.html',
+                templateUrl: 'partials/professor/dados-professor.html',
                 controller: 'ProfessorDetails'
             })
             .when("/dadosDisciplina/:turmaId/:idDisciplina", {
-                templateUrl: 'partials/dados-disciplina.html',
+                templateUrl: 'partials/disciplina/dados-disciplina.html',
                 controller: 'DisciplinaDetails'
             })
             .otherwise({
