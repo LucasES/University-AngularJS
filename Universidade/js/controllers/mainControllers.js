@@ -59,7 +59,6 @@
             }
             $scope.alunos = alunos;
             $scope.professores = temp;
-            console.log($scope.turma);
             //console.log($scope.alunos[0].nome);
         });
     });

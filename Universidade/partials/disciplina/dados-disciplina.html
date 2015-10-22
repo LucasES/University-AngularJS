@@ -19,7 +19,7 @@
             <h3>Ementa: <span class="dados">{{disciplina.ementa}}</span></h3>
             <h3>Professores: </h3>
             <ul ng-repeat="professor in professores">
-                <li>{{professor.nome}}</li>
+                <li> <a href="/#dadosProfessor/{{turma.id}}/{{professor.id}}"> {{professor.nome}} </a> </li>
             </ul>
             <h3>Alunos: </h3>
             <ul ng-repeat="aluno in alunos">
