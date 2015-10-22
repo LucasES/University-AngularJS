@@ -24,7 +24,7 @@
             <tbody>
                 <tr ng-repeat="disciplina in turma.disciplina | filter: filtro">
                     <td>
-                        <span>{{disciplina.nome}}</span>
+                        <a href="/#dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a>
                     </td>
                     <td>
                         <span>{{disciplina.ementa}}</span>
