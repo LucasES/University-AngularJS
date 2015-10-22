@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">
+                Dados Disciplina
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#/">Listar</a>
+                </li>
+                <li class="active">Dados Disciplina</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container panel">
+        <h2 class="text-center">Test</h2>
+        <div class="highlight col-md-6 col-md-offset-3">
+            <h3>Sigla: <span class="dados">{{disciplina.sigla}}</span></h3>
+            <h3>Disciplina: <span class="dados">{{disciplina.nome}}</span></h3>
+            <h3>Professores: </h3>
+            <ul ng-repeat="professor in professores">
+                <li>{{professor.nome}}</li>
+            </ul>
+            <h3>Alunos: </h3>
+            <ul ng-repeat="aluno in alunos">
+                <li>{{aluno.nome}}</li>
+            </ul>
+        </div>
+    </div>
+    <br />
+</div>

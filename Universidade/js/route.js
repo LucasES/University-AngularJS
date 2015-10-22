@@ -27,8 +27,12 @@
                 templateUrl: 'partials/dados-professor.html',
                 controller: 'ProfessorDetails'
             })
+            .when("/dadosDisciplina/:turmaId/:idDisciplina", {
+                templateUrl: 'partials/dados-disciplina.html',
+                controller: 'DisciplinaDetails'
+            })
             .otherwise({
                 redirectTo: "/"
-            });            
+            });
     });
 })();

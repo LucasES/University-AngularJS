@@ -33,7 +33,7 @@
                 <li>{{email}}</li>
             </ul>
             <h3>Disciplinas: </h3> <ul class="dados" ng-repeat="disciplina in aluno.aluno_semestre.cadeiras.disciplina">
-                <li>{{disciplina.nome}}</li>
+                <li><a href="/#dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a></li>
             </ul>
 
 

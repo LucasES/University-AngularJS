@@ -1,0 +1,40 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">
+                Dados Professor
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#/">Listar</a>
+                </li>
+                <li class="active">Dados Professor</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container panel">
+        <h2 class="text-center">{{professor.nome}}</h2>
+        <div class="highlight col-md-6 col-md-offset-3">
+            <h3>Id: <span class="dados">{{professor.id}}</span></h3>
+            <h3>Endereço: <span class="dados">{{professor.endereco}}</span></h3>
+            <h3>Cidade: <span class="dados">{{professor.cidade}}</span></h3>
+            <h3>Estado: <span class="dados">{{professor.estado}}</span></h3>
+            <h3>Telefones:</h3>
+            <ul>
+                <li>{{professor.telefones.residencia}}</li>
+                <li>{{professor.telefones.celular}}</li>
+
+            </ul>
+            <h3>Email: </h3>
+            <ul ng-repeat="email in professor.email">
+                <li>{{email}}</li>
+            </ul>
+            <h3>Disciplinas</h3>
+            <ul ng-repeat="disciplina in professor.cadeiras.disciplina">
+                <li> <a href="/#dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}}</a> </li>
+            </ul>
+
+        </div>
+    </div>
+    <br />
+</div>
