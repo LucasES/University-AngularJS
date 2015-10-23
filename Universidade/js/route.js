@@ -1,7 +1,8 @@
 ﻿(function () {
     var app = angular.module('rotas', []);
 
-    app.config(function ($routeProvider) {
+    app.config(function ($routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
         $routeProvider
             .when("/", {
                 templateUrl: 'partials/university.html',
