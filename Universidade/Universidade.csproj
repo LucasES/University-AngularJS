@@ -75,8 +75,8 @@
     <Content Include="js\app.js" />
     <Content Include="js\controllers\mainControllers.js" />
     <Content Include="js\controllers\professor\professorController.js" />
-    <Content Include="js\library-directives.js" />
-    <Content Include="js\route.js" />
+    <Content Include="js\directives\library-directives.js" />
+    <Content Include="js\router\route.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
