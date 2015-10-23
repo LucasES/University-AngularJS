@@ -73,6 +73,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
+    <Content Include="js\controllers\aluno\alunoController.js" />
+    <Content Include="js\controllers\disciplina\disciplinaController.js" />
     <Content Include="js\controllers\mainControllers.js" />
     <Content Include="js\controllers\professor\professorController.js" />
     <Content Include="js\directives\library-directives.js" />
