@@ -6,7 +6,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href="#/">Listar</a>
+                    <a href="/">Listar</a>
                 </li>
                 <li class="active">Dados Disciplina</li>
             </ol>
@@ -19,11 +19,11 @@
             <h3>Ementa: <span class="dados">{{disciplina.ementa}}</span></h3>
             <h3>Professores: </h3>
             <ul ng-repeat="professor in professores">
-                <li> <a href="/#dadosProfessor/{{turma.id}}/{{professor.id}}"> {{professor.nome}} </a> </li>
+                <li> <a href="dadosProfessor/{{turma.id}}/{{professor.id}}"> {{professor.nome}} </a> </li>
             </ul>
             <h3>Alunos: </h3>
             <ul ng-repeat="aluno in alunos">
-                <li><span> <a href="/#dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}}</a> </span></li>
+                <li><span> <a href="dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}}</a> </span></li>
             </ul>
         </div>
     </div>

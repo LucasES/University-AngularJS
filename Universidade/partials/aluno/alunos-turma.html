@@ -6,7 +6,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href="#/">Listar</a>
+                    <a href="/">Listar</a>
                 </li>
                 <li class="active">Alunos Turma</li>
             </ol>
@@ -25,7 +25,7 @@
             <tbody>
                 <tr ng-repeat="aluno in turma.aluno_turma.aluno | filter: filtro">
                     <td>
-                        <span> <a href="/#dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}}</a> </span>
+                        <span> <a href="dadosAluno/{{turma.id}}/{{aluno.id_aluno}}"> {{aluno.nome}}</a> </span>
                     </td>
                     <td>
                         <span>{{aluno.matricula}}</span>

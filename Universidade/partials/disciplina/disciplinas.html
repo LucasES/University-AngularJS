@@ -6,7 +6,7 @@
         </h1>
         <ol class="breadcrumb">
             <li>
-                <a href="#/">Listar</a>
+                <a href="/">Listar</a>
             </li>
             <li class="active">Disciplinas</li>
         </ol>
@@ -24,7 +24,7 @@
             <tbody>
                 <tr ng-repeat="disciplina in turma.disciplina | filter: filtro">
                     <td>
-                        <a href="/#dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a>
+                        <a href="dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a>
                     </td>
                     <td>
                         <span>{{disciplina.ementa}}</span>

@@ -6,7 +6,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href="#/">Listar</a>
+                    <a href="/">Listar</a>
                 </li>
                 <li class="active">Dados Aluno</li>
             </ol>
@@ -32,7 +32,7 @@
                 <li>{{email}}</li>
             </ul>
             <h3>Disciplinas: </h3> <ul class="dados" ng-repeat="disciplina in aluno.aluno_semestre.cadeiras.disciplina">
-                <li><a href="/#dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a></li>
+                <li><a href="dadosDisciplina/{{turma.id}}/{{disciplina.id}}">{{disciplina.nome}} </a></li>
             </ul>
 
 

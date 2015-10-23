@@ -14,6 +14,4 @@
             templateUrl: 'partials/filtrar/filtrar.html'
         }
     });
-
-
 })();
